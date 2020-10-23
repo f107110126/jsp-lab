@@ -15,4 +15,12 @@
         <servlet-name>HelloJSP</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>HelloWorld</servlet-name>
+        <servlet-class>com.mycompany.firstjsp.HelloWorld</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloWorld</servlet-name>
+        <url-pattern>/helloworld</url-pattern>
+    </servlet-mapping>
 </web-app>
