@@ -11,16 +11,25 @@
             <param-value>Guest</param-value>
         </init-param>
     </servlet>
-    <servlet-mapping>
+    <!-- if not comment this dispatcher to file under web-inf will not work -->
+    <!-- <servlet-mapping>
         <servlet-name>HelloJSP</servlet-name>
         <url-pattern>/</url-pattern>
-    </servlet-mapping>
+    </servlet-mapping> -->
     <servlet>
         <servlet-name>HelloWorld</servlet-name>
         <servlet-class>com.mycompany.firstjsp.HelloWorld</servlet-class>
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>Andy</param-value>
+        </init-param>
     </servlet>
     <servlet-mapping>
         <servlet-name>HelloWorld</servlet-name>
         <url-pattern>/helloworld</url-pattern>
     </servlet-mapping>
+    <context-param>
+        <param-name>message</param-name>
+        <param-value>only for right name.</param-value>
+    </context-param>
 </web-app>
